@@ -6,19 +6,24 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
     <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
-    <title>едадост.</title>
+    <title>🍩 едадост - о нас</title>
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
+        <audio loop preload="auto" id="audio">
+            <source src="C:/Rocket.mp3" type="audio/mp3">
+        </audio>
+
 
 	
 	<div class="video">
-		<video class="video_media" src="/holod.mp4" autoplay muted loop></video>
+		<video class="video_media" src="D:/dostavka/dostavka.mp4" autoplay muted loop></video>
 	</div>
 
 
@@ -27,23 +32,59 @@
 	<div class="row">
 			<div class="col-lg-12">
 				<div class="center2">
-					<h1>🍩 еда.</h1><h2>онлайн‑магазин с доставкой от 15 минут. Приносим продукты, товары для дома, косметику и всё нужное для комфортного быта. В каждом районе есть свой даркстор, поэтому так быстро.</h2>
-					<a class="knopka2" href="https://t.me/id216">попробуй, реально быстро.</a>
+				<div class="typed">
+					<h1>🍩<span class="anim"></span></h1>
 				</div>
-			</div>
-	</div>
-
-
-	<div class="row">
-			<div class="col-lg-12">
-				<div class="sverhu">					
-					<a href="/index.html">главная</a>
-					<a href="/about.html">о нас</a>
-					<a href="/pic.html">пицца</a>
-					<a href="/table.html">таблица</a>
+				<h2>онлайн‑магазин с доставкой от 15 минут.</h2>
+					<a class="knopkaw" href="https://t.me/moneyworldstar">закажи еды</a>
 				</div>
 			</div>
 		</div>
+
+ <script>
+    var typed = new Typed('.anim', {
+      strings: ['едадост.'],
+      typeSpeed: 300,
+      smartBackspace: true
+    });
+  </script>
+
+
+
+<!-- 	<div class="row">
+			<div class="col-lg-12">
+				<div class="center2">
+				<div class="typed">
+					<h1>C:\<span class="anim"></span></h1>
+				</div>
+				<a>16 y.o, python, html, монтаж видео, дезигн.</a>
+					<span id="typed"></span>
+					<a class="knopkaw" href="https://t.me/moneyworldstar">напишешь?</a>
+				</div>
+			</div>
+		</div>
+
+ <script>
+    var typed = new Typed('.anim', {
+      strings: ['whoami.txt'],
+      typeSpeed: 100,
+      smartBackspace: true
+    });
+  </script> -->
+
+	<div class="row">
+			<div class="col-lg-12">
+				<div class="sverhu">
+					<a href="/dostavka/index.html">главная</a>
+					<a href="/dostavka/about.html">о нас</a>
+					<a href="/dostavka/pizza.html">пицца</a>
+					<a href="/dostavka/table.html">таблица</a>
+					<a href="/dostavka/menu.html">меню</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 </body>
 </html>

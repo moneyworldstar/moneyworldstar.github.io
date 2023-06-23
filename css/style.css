@@ -7,27 +7,33 @@
 
 body {text-align: center;}
 
-html { 
+/*html { 
 	background: rgb(255,229,162);
 	background: linear-gradient(90deg, rgba(255,229,162,1) 0%, rgba(239,159,93,1) 99%);
+}*/
+
+h1 { font-family: VKSansDisplayDemibold;
+		font-size: 68.8px;
+		color: white;
+		margin-bottom: 0px;
 }
 
-	h1 { font-family: VKSansDisplayDemibold;
-		font-size: 68.8px;
-		background: -webkit-linear-gradient(#242100, #242e03);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-		margin-bottom: 0px;
+h3 { font-size: 68.8px;
+	margin-bottom: 0px;
+}
+
+h4 { font-size: 68.8px;
+position: absolute;
+}
+
+h5 { font-size: 68.8px;
+position: absolute;
 }
 
 table { font-family: VKSansDisplayDemibold;
 		font-size: 35.23px;
-		background: -webkit-linear-gradient(#242100, #242e03);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+		color: whitesmoke;
 		margin-bottom: 0px;
-
-
 
 }
 
@@ -50,15 +56,14 @@ h2 {color: black;
 			color: rgba(255, 255, 255, 0.7);
 }
 
-a {color: black;
+a {color: whitesmoke;
 		font-size: 16px;
 			font-family: VKSansDisplay;
 			font-style: normal;
 			margin-top: 0px ; margin-bottom: 30px;
-			color: rgba(255, 255, 255, 0.8);
 }
 
-.knopka {color: black;
+.knopka {color: whitesmoke;
 	font-family: VKSansDisplayDemibold;
 		font-style: normal;
 			font-size: 16px; 
@@ -70,6 +75,10 @@ a {color: black;
 			border-radius: 25px;
 			box-sizing: border-box;
 			text-decoration: none;
+}
+
+.emoji {
+	font-family: NotoColorEmoji;
 }
 
 .knopka2 {color: white;
@@ -87,12 +96,43 @@ a {color: black;
 			text-align: center;
 }
 
-.sverhu {color: black;	
-		font-family: VKSansDisplay;
+.knopkaw {color: white;
+	font-family: VKSansDisplayDemibold;
+		font-style: normal;
 			font-size: 16px; 
-			color: rgba(255, 255, 255, 1);
+			padding: 16px 32px;
+			background: red;
+			display:inline-block;
+			background: rgba(255, 255, 255, 0.1);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			border-radius: 25px;
+			box-sizing: border-box;
+			text-decoration: none;
+			justify-content: center;
+}
+
+.sverhu {	
+		font-family: VKSansDisplay;
+		font-size: 16px; 
+		color: white;
 			
 }
+
+
+.knopkaw {color: white;
+	font-family: VKSansDisplayDemibold;
+		font-style: normal;
+			font-size: 16px; 
+			padding: 16px 32px;
+			background: red;
+			display: flex;
+			background: rgba(255, 255, 255, 0.1);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			border-radius: 25px;
+			box-sizing: border-box;
+			margin-right: 80%;
+}
+
 
 .center1 {
 	height: calc(100vh - 20px);
@@ -102,11 +142,10 @@ a {color: black;
 }
 
 .pic{
-	height: 854px;
-	width: 480px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	scale: 50%;
 }
 
 .center2{
@@ -118,17 +157,115 @@ a {color: black;
 	hyphens: manual;
 }
 
+.video {
+	position: absolute;	
+	left: 0;
+	right: 0;
+	top: 0;
+	background-size: cover;
+	min-height: 120%;
+	filter: blur(5px);
+}
+
+.video_media {
+	width: 100%;
+	min-height: 120%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	object-fit: cover;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin: 10px;
+}
+
+.bg-area li {
+	position: absolute;
+	list-style: none;
+	bottom: -150px;
+	left: 5%;
+	font-size: 5rem;
+	animation: spin 20s linear infinite;
+}
+
+.bg-area li:nth-child(1){
+	left: 10%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+.bg-area li:nth-child(2){
+	left: 20%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+.bg-area li:nth-child(3){
+	left: 30%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+.bg-area li:nth-child(4){
+	left: 40%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+.bg-area li:nth-child(5){
+	left: 50%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+.bg-area li:nth-child(6){
+	left: 60%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+.bg-area li:nth-child(7){
+	left: 70%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+.bg-area li:nth-child(8){
+	left: 80%;
+	animation-delay: 2s;
+	animation-duration: 15s;
+}
+
+@keyframes spin {
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+
+	}
+}
+
 .icons { position: fixed; bottom: 0px; left: 0px; width: 100%; margin-bottom: 56px; }
 .icons a { margin: 0px 8px; }
 .icons a img { opacity: 0.48; transition: 0.9s;}
 .icons a:hover img { opacity: 0.90; transition: 0.4s;}
 
 .sverhu { position: fixed; top: 0px; left: 0px; width: 100%; margin-top: 56px; }
-.sverhu a { margin: 0px 8px; text-decoration: none; color: rgba(0, 0, 0, 0.5); }
+.sverhu a { margin: 0px 8px; text-decoration: none; color: rgba(128, 128, 128, 1); }
 .sverhu a { opacity: 0.48; transition: 0.9s;}
-.sverhu a:hover { opacity: 0.90; transition: 0.4s;}
+.sverhu a:hover { opacity: 1; transition: 0.4s;}
 
 .button:hover {transform: scale(1.12); transition: 0.41s; }
 
 .button { transition: 0.83s; }
 
+
+.knopkaw:hover {transform: scale(1.12); transition: 0.41s; }
+
+.knopkaw { transition: 0.83s; }
