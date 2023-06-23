@@ -243,6 +243,10 @@ nav li {
 	animation-duration: 15s;
 }
 
+.scroller {
+  scrollbar-width: none;
+}
+
 @keyframes spin {
 	100% {
 		transform: translateY(-800px) rotate(360deg);
