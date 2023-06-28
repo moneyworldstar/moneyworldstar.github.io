@@ -16,12 +16,3 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'NotoColorEmoji';
-    src: url('NotoColorEmoji.otf');
-    src: local('NotoColorEmoji'), local('NotoColorEmoji'),
-        url('NotoColorEmoji.ttf') format('truetype'),
-    font-weight: bold;
-    font-style: italic;
-}
-
